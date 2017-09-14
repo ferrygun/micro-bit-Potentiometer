@@ -25,14 +25,16 @@
 	$.ajax({
 			url: 'https://script.google.com/macros/s/AKfycbyerqN255JhQpPexu8snihcqtWsBUYBT8IodVTRbyU/dev?val=9',
 			type: 'GET',
+			contentType: 'application/json; charset=utf-8',
 			dataType: 'jsonp',
+			async: false,
 			success: function(response) {
 				console.log(response);
 		    },
 		    error: function(error) {
 				console.log(error);
 		    },
-			beforeSend: setHeader
+			
 		});
     </script>
 
