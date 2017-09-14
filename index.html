@@ -25,6 +25,7 @@
 	$.ajax({
 			url: 'https://script.google.com/macros/s/AKfycbyerqN255JhQpPexu8snihcqtWsBUYBT8IodVTRbyU/dev?val=9',
 			type: 'GET',
+			dataType: 'jsonp',
 			success: function(response) {
 				console.log(response);
 		    },
