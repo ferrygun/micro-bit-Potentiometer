@@ -22,7 +22,16 @@
 <body unresolved>
 
      <script>
-
+	$.ajax({
+			url: 'https://script.google.com/macros/s/AKfycbyerqN255JhQpPexu8snihcqtWsBUYBT8IodVTRbyU/dev?val=9',
+			type: 'GET',
+			success: function(response) {
+				console.log(response);
+		    },
+		    error: function(error) {
+				console.log(error);
+		    }
+		});
     </script>
 
 	
